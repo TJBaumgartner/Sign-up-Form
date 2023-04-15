@@ -18,7 +18,6 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -41,7 +40,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 a:link{text-decoration: none;}
 a:visited{text-decoration: none;}
 a:hover{text-decoration: none;}
@@ -54,11 +52,6 @@ a:active{text-decoration: none;}
     list-style: none;
     text-decoration: none;
 }
-
-
-
-
-
 
 
 
@@ -113,6 +106,17 @@ a:active{text-decoration: none;}
 #formContent form{
     width: 80%;
     margin: auto;
+    display: grid;
+    grid-template-columns: repeat (2, 1fr);
+}
+
+#leftColumn{
+    grid-row: 2/5;
+    grid-column: 1;
+}
+#rightColumn{
+    grid-row: 2/5;
+    grid-column: 2;
 }
 #submitSpace{
     width: 80%;
@@ -127,9 +131,7 @@ a:active{text-decoration: none;}
     text-decoration: none;
     color: rgb(59, 90, 47);
 }
-.italic{
-    font-style: italic;
-}
+
 #submitButton{
     margin-top: 40px;
     margin-bottom: 25px;
@@ -139,4 +141,36 @@ a:active{text-decoration: none;}
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 15px 40px 15px 40px;
+}
+legend{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+label,input{
+    display:flex;
+    flex-direction:column;
+}
+label{
+    font-size: 0.8rem;
+    padding-bottom: 3px;
+}
+input{
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid rgb(192, 191, 191);
+    border-radius: 5px;
+}
+input :invalid{
+    border-color: red;
+}
+input:focus { 
+    outline: none;
+    border-color: blue;
+    box-shadow: 0 0 3px black;
+}
+.italic{
+    font-style: italic;
 }
