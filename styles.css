@@ -52,6 +52,11 @@ a:active{text-decoration: none;}
     list-style: none;
     text-decoration: none;
 }
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 
 
@@ -90,10 +95,31 @@ a:active{text-decoration: none;}
 #logoDiv{
     width: 100%;
     height: 10rem;
-    background-color: black;
-    opacity: 20%;
+    background-color: rgba(0, 0, 0, 0.445);
     margin-top: 300px;
     color: white;
+    text-align: center;
+}
+@import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
+@font-face {font-family: "Norse"; src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot"); 
+    src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"),
+     url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), 
+     url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), 
+     url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), 
+     url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg"); }
+#logoDiv h1{
+    font-family: Norse;
+    font-size: 2rem;
+    padding-top: 4rem;
+    padding-right: 150px;
+    float: right;
+}
+#logoDiv img{
+    padding-top: 15px;
+    padding-left: 170px;
+    height: 9rem;
+    width: auto;
+    float: left;
 }
 #textSpace{
     background-color: rgb(248, 247, 247);
@@ -151,6 +177,9 @@ a:active{text-decoration: none;}
     text-decoration: none;
     color: rgb(59, 90, 47);
 }
+#submitSpace a:hover{
+    color: rgb(150, 196, 132);
+}
 
 #submitButton{
     margin-top: 40px;
@@ -161,6 +190,11 @@ a:active{text-decoration: none;}
     border-radius: 5px;
     font-size: 1.2rem;
     padding: 15px 40px 15px 40px;
+}
+#submitButton:hover{
+    color: rgb(59, 90, 47);
+    background-color: white;
+    transition: 0.20s ease-in-out;
 }
 legend{
     font-size: 1.5rem;
