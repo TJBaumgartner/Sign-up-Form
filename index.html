@@ -3,11 +3,50 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Table template</title>
+    <title>Sign Up Form</title>
     <link href="styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
+        <div id="container">
+            <div id="imageSpace">
+                <div id="logoDiv">
 
+                </div>
+            </div>
+            <div id="textSpace">
+                <div id="introduction">
+                    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                    <p>You <em>know</em> you want to.</p>
+                </div>
+                <div id="formContent">
+                    <form action="urlWhereDataIsSent.com" method="get">
+                        <legend>Let's do this!</legend>
+
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" id="firstName" name="firstName" required>
+
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" id="lastName" name="lastName" required>
+
+                        <label for="userEmail">EMAIL</label>
+                        <input type="email" id="userEmail" name="userEmail" required>
+
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+                        <label for="userPassword">PASSWORD</label>
+                        <input type="password" id="userPassword" name="userPassword" required>
+
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </form>
+                </div>
+                <div id="submitSpace">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="#">Log in</a></p>
+                </div>
+            </div>
+        </div>
 
 
 
